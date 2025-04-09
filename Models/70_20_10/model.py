@@ -63,32 +63,12 @@ class _model:
 
         return train_ds, val_ds, test_ds
 
-    def _build_model(self, model_name: Literal["Custom_CNN_144K", "MobileNetV3Small", "EfficientNetB0"]) -> Model:
+    def _build_model(self, model_name: Literal["Custom_CNN", "MobileNetV3Small", "EfficientNetB0"]) -> Model:
 
-        if model_name == "Custom_CNN_144K":
+        if model_name == "Custom_CNN":
             model = Sequential([
-                Input(shape=(224, 224, 3), dtype="float32"),
-                Rescaling(1./255),  # Normalize pixel values
-
-                Conv2D(32, (3,3), activation='relu'),
-                MaxPooling2D(2,2),
+                # Hidden Layers not disclosed. 
                 
-                Conv2D(64, (3,3), activation='relu'),
-                MaxPooling2D(2,2),
-
-                Conv2D(128, (3,3), activation='relu'),
-                MaxPooling2D(2,2),
-                
-                GlobalAveragePooling2D(),
-
-                Dense(256, activation='relu'),
-                BatchNormalization(),
-                Dropout(0.4),  # Dropout to prevent overfitting
-                
-                Dense(64, activation='relu'),
-                BatchNormalization(),
-                Dropout(0.3),
-
                 Dense(10, activation='softmax')  # Softmax for multi-class classification
             ], name=model_name)
 
