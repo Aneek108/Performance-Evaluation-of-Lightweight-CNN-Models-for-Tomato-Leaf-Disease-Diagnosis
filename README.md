@@ -6,7 +6,8 @@ Diseases of tomato leaves are a major threat to farm production, resulting in hu
 
 The dataset was downloaded then splitted into train, validation and test sets. Then the models were trained using the train dataset, and during the training process validation was done using the validation dataset. Finally evaluation was done using the test dataset.
 
-![Methodology_Diagram](https://github.com/user-attachments/assets/85212db5-dabe-4ffe-8f86-1fdfc8f05720)
+![Methodology](https://github.com/user-attachments/assets/de7e2e3b-a723-48fc-99f1-473a034bce92)
+
 
 
 Transfer Learning Model Used:
