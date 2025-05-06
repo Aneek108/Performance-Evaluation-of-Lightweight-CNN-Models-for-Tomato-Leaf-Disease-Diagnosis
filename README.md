@@ -5,14 +5,15 @@ Diseases of tomato leaves are a major threat to farm production, resulting in hu
 > ### [PlantVillage Image Dataset](https://data.mendeley.com/datasets/tywbtsjrjv/1)
 > Only the Tomato images are used from the PlantVillage dataset.
 
-![Methodology](https://github.com/user-attachments/assets/de7e2e3b-a723-48fc-99f1-473a034bce92)![2813d2f7-5922-4be3-9865-48ef10157a8f](https://github.com/user-attachments/assets/7b7e2692-474c-489c-83fe-148474cbf29e)
+<img src="https://github.com/user-attachments/assets/de7e2e3b-a723-48fc-99f1-473a034bce92" alt="Methodology" style="width:50%; height:auto;">
+<img src="https://github.com/user-attachments/assets/7b7e2692-474c-489c-83fe-148474cbf29e" alt="Classes" style="width:100%; height:auto;">
 
 Transfer Learning Model Used:
 1. MobileNet-V3 Small
 2. EfficientNet-B0
 3. Custom CNN
 
-![Custom CNN](https://github.com/user-attachments/assets/d98a4d48-7c7c-493d-8bc0-e52aa4d782e1)
+<img src="https://github.com/user-attachments/assets/d98a4d48-7c7c-493d-8bc0-e52aa4d782e1" alt="Custon CNN" style="width:50%; height:auto;">
 
 The accuracies attained by the models are:
 |Models                  |Accuracy Score |
